@@ -1,0 +1,30 @@
+BACKTEST CONFIGURATION
+======================
+Strategy:        SMA Crossover
+Long SMA:        150 days
+Short SMA:       120 days
+Max Stocks:      10
+Initial Capital: 1,00,000
+Monthly SIP:     20,000
+Data Range:      2005-10-04 to 2026-03-28 (20 years)
+
+RESULTS
+=======
+Final Value:     Rs.1,87,112,426
+Total Return:    1,87,012%
+XIRR:            44.43%
+Max Drawdown:    71.73%
+Sharpe Ratio:    0.80
+Total Trades:    1,028
+Win Rate:        38.51%
+
+COLUMN DEFINITIONS (backtest_trades.csv)
+========================================
+date              Trading day the order was executed
+symbol            NSE stock ticker (yfinance format)
+action            BUY or SELL
+qty               Number of shares traded
+price             Execution price: (close+high)/2 for buys, (close+low)/2 for sells
+execution_price   Same as price (slippage modelled via price, not separately)
+cost              Total transaction fees (STT + exchange + SEBI + stamp duty + GST + DP)
+portfolio_value   Total portfolio value (cash + all positions) at the time of this trade
