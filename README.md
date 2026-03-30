@@ -150,3 +150,4 @@ Execution price modelling:
 ## Disclaimer
 
 This is a personal research and backtesting tool. Past performance does not guarantee future results. Not financial advice. Use at your own risk.
+
